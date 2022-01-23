@@ -29,6 +29,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   margin: auto;
+  padding: 0 10px;
 
 }
 .logo{
@@ -180,26 +181,67 @@ main{
 @media only screen and (max-width:688px) {
   .container{
     width: 100%;
-
+  }
+  .section-title{
+    width: 100%;
+    text-align: center;
   }
   .players{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 30px;
+  }
+  .player{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    margin-top: 25px;
+  }
+  .courses{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+  }
 }
-.player{
-  flex-direction: column;
-  align-items: center;
-}
-.blogs{
+@media only screen and (min-width:688px) and (max-width:980px){
+   .container{
+    width: 100%;
+  }
+  .section-title{
+    width: 100%;
+    text-align: center;
+  }
+  .players{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 30px;
-  margin-top: 25px;
-}
-.courses{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  column-gap: 30px;
-}
+  }
+  .player{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blogs{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+    margin-top: 25px;
+  }
+  .courses{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+  }
+  
 }
